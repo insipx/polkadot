@@ -170,6 +170,7 @@ pub fn new_full(config: Configuration<CustomConfiguration, GenesisConfig>)
 		.expect("Link Half and Block Import are present for Full Services or setup failed before. qed");
 
 	if is_collator {
+		network_gossip::register_non_authority_validator(service.network());
 		info!(
 			"The node cannot start as an authority because it is also configured to run as a collator."
 		);
