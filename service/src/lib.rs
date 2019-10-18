@@ -141,8 +141,8 @@ pub fn new_full(config: Configuration<CustomConfiguration, GenesisConfig>)
 {
 	use substrate_network::DhtEvent;
 
-	let is_authority = config.roles.is_authority() && !is_collator;
 	let is_collator = config.custom.collating_for.is_some();
+	let is_authority = config.roles.is_authority() && !is_collator;
 	let force_authoring = config.force_authoring;
 	let max_block_data_size = config.custom.max_block_data_size;
 	let db_path = config.database_path.clone();
