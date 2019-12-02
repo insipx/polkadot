@@ -62,7 +62,13 @@ pub use sp_runtime::BuildStorage;
 pub use timestamp::Call as TimestampCall;
 pub use balances::Call as BalancesCall;
 pub use attestations::{Call as AttestationsCall, MORE_ATTESTATIONS_IDENTIFIER};
-pub use parachains::Call as ParachainsCall;
+pub use parachains::{Call as ParachainsCall, Trait as ParachainsTrait, NEW_HEADS_IDENTIFIER};
+pub use claims::{Call as ClaimsCall, Trait as ClaimsTrait};
+pub use registrar::{Call as RegistrarCall, Trait as RegistrarTrait};
+
+/// Implementations of some helper traits passed into runtime modules as associated types.
+pub mod impls;
+use impls::{CurrencyToVoteHandler, TargetedFeeAdjustment, ToAuthor, WeightToFee};
 
 /// Constant values used within the runtime.
 pub mod constants;

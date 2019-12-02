@@ -112,6 +112,7 @@ pub trait ActiveParas {
 
 /// Description of how often/when this parachain is scheduled for progression.
 #[derive(Encode, Decode, Clone, PartialEq, Eq, RuntimeDebug)]
+#[cfg_attr(feature = "std", derive(Serialize))]
 pub enum Scheduling {
 	/// Scheduled every block.
 	Always,
@@ -121,6 +122,7 @@ pub enum Scheduling {
 
 /// Information regarding a deployed parachain/thread.
 #[derive(Encode, Decode, Clone, PartialEq, Eq, RuntimeDebug)]
+#[cfg_attr(feature = "std", derive(Serialize))]
 pub struct Info {
 	/// Scheduling info.
 	pub scheduling: Scheduling,
