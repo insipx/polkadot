@@ -72,10 +72,14 @@ pub use registrar::{Call as RegistrarCall, Trait as RegistrarTrait};
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 /// Implementations of some helper traits passed into runtime modules as associated types.
 pub mod impls;
 use impls::{CurrencyToVoteHandler, TargetedFeeAdjustment, ToAuthor, WeightToFee};
 >>>>>>> Patches to make interacting with archive easier
+
+=======
+>>>>>>> fix borked rebase
 */
 /// Constant values used within the runtime.
 pub mod constants;
