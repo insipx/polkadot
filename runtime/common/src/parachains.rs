@@ -25,8 +25,8 @@ use sp_runtime::traits::{
 	AccountIdConversion, BadOrigin,
 };
 use frame_support::weights::SimpleDispatchInfo;
-use primitives::{
-	Balance,
+pub use primitives::{
+	Hash, Balance,
 	parachain::{
 		self, Id as ParaId, Chain, DutyRoster, AttestedCandidate, Statement, ParachainDispatchOrigin,
 		UpwardMessage, ValidatorId, ActiveParas, CollatorId, Retriable,
