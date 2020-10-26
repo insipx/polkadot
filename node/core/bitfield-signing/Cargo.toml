@@ -12,5 +12,5 @@ log = "0.4.8"
 polkadot-primitives = { path = "../../../primitives" }
 polkadot-node-subsystem = { path = "../../subsystem" }
 polkadot-node-subsystem-util = { path = "../../subsystem-util" }
-keystore = { package = "sc-keystore", git = "https://github.com/paritytech/substrate", branch = "master" }
+keystore = { package = "sc-keystore", git = "https://github.com/paritytech/substrate", rev = "7314a78d49d0dc3862c6ef7c8115cb1b3d0c0fd2" }
 wasm-timer = "0.2.4"
