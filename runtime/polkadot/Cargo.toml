@@ -15,57 +15,57 @@ serde_derive = { version = "1.0.117", optional = true }
 static_assertions = "1.1.0"
 smallvec = "1.5.0"
 
-authority-discovery-primitives = { package = "sp-authority-discovery", git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-babe-primitives = { package = "sp-consensus-babe", git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-sp-api = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-inherents = { package = "sp-inherents", git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-offchain-primitives = { package = "sp-offchain", git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-sp-std = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-sp-io = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-sp-staking = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-sp-session = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-sp-version = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-tx-pool-api = { package = "sp-transaction-pool", git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-block-builder-api = { package = "sp-block-builder", git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+authority-discovery-primitives = { package = "sp-authority-discovery", git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+babe-primitives = { package = "sp-consensus-babe", git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+sp-api = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+inherents = { package = "sp-inherents", git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+offchain-primitives = { package = "sp-offchain", git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+sp-std = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+sp-io = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+sp-runtime = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+sp-staking = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+sp-core = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+sp-session = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+sp-version = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+tx-pool-api = { package = "sp-transaction-pool", git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+block-builder-api = { package = "sp-block-builder", git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
 
-pallet-authority-discovery = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-authorship = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-babe = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-balances = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-transaction-payment = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-transaction-payment-rpc-runtime-api = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-collective = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-democracy = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-elections-phragmen = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-frame-executive = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-grandpa = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-identity = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-im-online = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-indices = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-membership = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-multisig = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-nicks = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-offences = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-proxy = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-randomness-collective-flip = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-scheduler = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-session = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-frame-support = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-staking = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-staking-reward-curve = { git = "https://github.com/paritytech/substrate", branch = "master" }
-frame-system = {git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-frame-system-rpc-runtime-api = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-timestamp = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-treasury = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-vesting = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-pallet-utility = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+pallet-authority-discovery = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-authorship = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-babe = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-balances = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-transaction-payment = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-transaction-payment-rpc-runtime-api = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-collective = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-democracy = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-elections-phragmen = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+frame-executive = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-grandpa = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-identity = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-im-online = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-indices = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-membership = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-multisig = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-nicks = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-offences = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-proxy = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-randomness-collective-flip = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-scheduler = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-session = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+frame-support = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-staking = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-staking-reward-curve = { git = "https://github.com/insipx/substrate", branch = "insipx/testing" }
+frame-system = {git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+frame-system-rpc-runtime-api = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-timestamp = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-treasury = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-vesting = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
+pallet-utility = { git = "https://github.com/insipx/substrate", default-features = false , branch = "insipx/testing" }
 
-frame-benchmarking = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false, optional = true }
-frame-system-benchmarking = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false, optional = true }
-pallet-offences-benchmarking = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false, optional = true }
-pallet-session-benchmarking = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false, optional = true }
+frame-benchmarking = { git = "https://github.com/insipx/substrate", default-features = false, optional = true , branch = "insipx/testing" }
+frame-system-benchmarking = { git = "https://github.com/insipx/substrate", default-features = false, optional = true , branch = "insipx/testing" }
+pallet-offences-benchmarking = { git = "https://github.com/insipx/substrate", default-features = false, optional = true , branch = "insipx/testing" }
+pallet-session-benchmarking = { git = "https://github.com/insipx/substrate", default-features = false, optional = true , branch = "insipx/testing" }
 hex-literal = { version = "0.3.1", optional = true }
 
 runtime-common = { package = "polkadot-runtime-common", path = "../common", default-features = false }
@@ -75,8 +75,8 @@ primitives = { package = "polkadot-primitives", path = "../../primitives", defau
 hex-literal = "0.3.1"
 libsecp256k1 = "0.3.5"
 tiny-keccak = "2.0.2"
-keyring = { package = "sp-keyring", git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-trie = { git = "https://github.com/paritytech/substrate", branch = "master" }
+keyring = { package = "sp-keyring", git = "https://github.com/insipx/substrate", branch = "insipx/testing" }
+sp-trie = { git = "https://github.com/insipx/substrate", branch = "insipx/testing" }
 trie-db = "0.22.1"
 serde_json = "1.0.59"
 
