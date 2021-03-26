@@ -24,19 +24,19 @@ futures = "0.3.12"
 service = { package = "polkadot-service", path = "../node/service", default-features = false, optional = true }
 polkadot-parachain = { path = "../parachain", optional = true }
 
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
+sp-core = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
 tracing-futures = "0.2.4"
-frame-benchmarking-cli = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28", optional = true }
-sc-cli = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28", optional = true }
-sc-service = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28", optional = true }
-browser-utils = { package = "substrate-browser-utils", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28", optional = true }
+frame-benchmarking-cli = { git = "https://github.com/insipx/substrate/", optional = true , branch = "wasm-backports-0.8.28" }
+sc-cli = { git = "https://github.com/insipx/substrate/", optional = true , branch = "wasm-backports-0.8.28" }
+sc-service = { git = "https://github.com/insipx/substrate/", optional = true , branch = "wasm-backports-0.8.28" }
+browser-utils = { package = "substrate-browser-utils", git = "https://github.com/insipx/substrate/", optional = true , branch = "wasm-backports-0.8.28" }
 
 # this crate is used only to enable `trie-memory-tracker` feature
 # see https://github.com/paritytech/substrate/pull/6745
-sp-trie = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28", default-features = false }
+sp-trie = { git = "https://github.com/insipx/substrate/", default-features = false , branch = "wasm-backports-0.8.28" }
 
 [build-dependencies]
-substrate-build-script-utils = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
+substrate-build-script-utils = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
 
 [features]
 default = [ "wasmtime", "db", "cli", "full-node", "trie-memory-tracker", "polkadot-parachain" ]

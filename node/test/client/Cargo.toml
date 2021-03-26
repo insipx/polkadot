@@ -14,18 +14,18 @@ polkadot-primitives = { path = "../../../primitives" }
 polkadot-node-subsystem = { path = "../../subsystem" }
 
 # Substrate dependencies
-substrate-test-client = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
-sc-service = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
-sc-block-builder = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
-sc-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
-sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
-sp-inherents = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
-sp-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
-sp-timestamp = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
-sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
-sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
+substrate-test-client = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
+sc-service = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
+sc-block-builder = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
+sc-consensus = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
+sp-blockchain = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
+sp-runtime = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
+sp-inherents = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
+sp-core = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
+sp-api = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
+sp-timestamp = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
+sp-consensus = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
+sp-state-machine = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
 
 [dev-dependencies]
-sp-keyring = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.8.28" }
+sp-keyring = { git = "https://github.com/insipx/substrate/", branch = "wasm-backports-0.8.28" }
