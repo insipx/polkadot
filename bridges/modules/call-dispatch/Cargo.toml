@@ -16,14 +16,14 @@ bp-runtime = { path = "../../primitives/runtime", default-features = false }
 
 # Substrate Dependencies
 
-frame-support = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-frame-system = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-std = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
+frame-support = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+frame-system = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-core = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-std = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
 
 [dev-dependencies]
-sp-io = { git = "https://github.com/paritytech/substrate", branch = "master" }
+sp-io = { git = "https://github.com/paritytech/substrate", branch = "state-trace-rpc" }
 serde = "1.0"
 
 [features]

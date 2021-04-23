@@ -28,31 +28,31 @@ pallet-substrate-bridge = { path = "../../../modules/substrate", default-feature
 
 # Substrate Dependencies
 
-frame-executive = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-frame-support = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-frame-system = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-frame-system-rpc-runtime-api = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-pallet-aura = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-pallet-balances = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-pallet-grandpa = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-pallet-randomness-collective-flip = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-pallet-session = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-pallet-sudo = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-pallet-timestamp = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-pallet-transaction-payment = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-api = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-block-builder = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-consensus-aura = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-inherents = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-finality-grandpa = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-offchain = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-session = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-std = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-trie = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-version = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
+frame-executive = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+frame-support = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+frame-system = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+frame-system-rpc-runtime-api = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+pallet-aura = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+pallet-balances = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+pallet-grandpa = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+pallet-randomness-collective-flip = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+pallet-session = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+pallet-sudo = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+pallet-timestamp = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+pallet-transaction-payment = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-api = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-block-builder = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-consensus-aura = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-core = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-inherents = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-finality-grandpa = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-offchain = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-session = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-std = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-transaction-pool = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-trie = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-version = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
 
 [build-dependencies]
 wasm-builder-runner = { package = "substrate-wasm-builder-runner", version = "2.0.0" }

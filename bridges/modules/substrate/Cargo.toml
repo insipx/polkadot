@@ -20,18 +20,18 @@ bp-runtime = { path = "../../primitives/runtime", default-features = false }
 
 # Substrate Dependencies
 
-frame-support = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-frame-system = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-finality-grandpa = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-std = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
-sp-trie = { git = "https://github.com/paritytech/substrate", branch = "master" , default-features = false }
+frame-support = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+frame-system = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-finality-grandpa = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-std = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
+sp-trie = { git = "https://github.com/paritytech/substrate", default-features = false , branch = "state-trace-rpc" }
 
 [dev-dependencies]
 bp-test-utils = {path = "../../primitives/test-utils" }
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-io = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "master" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "state-trace-rpc" }
+sp-io = { git = "https://github.com/paritytech/substrate", branch = "state-trace-rpc" }
+sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "state-trace-rpc" }
 
 [features]
 default = ["std"]
